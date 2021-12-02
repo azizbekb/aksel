@@ -1,0 +1,49 @@
+.header {
+    position: fixed;
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 64px 0px;
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        text-decoration: none;
+    }
+
+    &__logo-img {
+        display: block;
+        flex-shrink: 0;
+    }
+
+    &__hamburger {
+        display: none;
+        width: 24px;
+        height: 20px;
+        background-image: url("../images/header-hamburger.svg");
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .header {
+        &__container {
+            justify-content: space-between;
+        }
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .header {
+        width: 50%;
+        &__hamburger {
+            display: inline-block;
+        }
+    }
+}

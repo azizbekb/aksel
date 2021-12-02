@@ -1,0 +1,93 @@
+.hero {
+    &__container {
+        background-image: url("../images/hero-background.png");
+        background-repeat: no-repeat;
+        background-size: 1111px 252px;
+        background-position: center;
+        border-radius: 15px;
+        padding: 64px 190px;
+    }
+
+    &__title {
+        margin: 0;
+        padding: 0;
+        width: 730px;
+        height: 48px;
+        left: 355px;
+        top: 219px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 48px;
+        margin-bottom: 24px;
+        /* identical to box height, or 100% */
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__desc {
+        margin: 0;
+        padding: 0;
+        width: 730px;
+        height: 52px;
+        left: 355px;
+        top: 291px;
+        font-size: 16px;
+        line-height: 26px;
+        /* or 162% */ 
+        text-align: center;  
+        color: #FFFFFF;
+        
+    }
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+
+    .hero__container {
+        background-image: url("../images/hero-background@2x.png");
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .hero {
+        &__container {
+            background-image: url("../../images/hero-background-mobile.png");
+            background-size: 689px 252px;
+            padding: 64px 0px;
+        }
+    }
+}
+
+@media only screen and (max-width:375) {
+    .hero {
+        &__container {
+            background-image: url("../images/hero-background.png");
+            background-size: 375px 320px;
+            padding: 105px 24px;
+        }
+    
+        &__title {
+            width: 327px;
+            height: 36px;
+            left: 24px;
+            top: 201px;
+            font-size: 32px;
+            line-height: 36px;
+            margin-bottom: 24px;
+        }
+    
+        &__desc {
+            width: 327px;
+            height: 50px;
+            left: 24px;
+            top: 261px;
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}

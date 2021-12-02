@@ -1,0 +1,42 @@
+.nav {
+    &__list {
+        display: flex; 
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    &__item {
+        margin-right: 42px;
+    }
+
+    &__link {
+        white-space: nowrap;
+        text-decoration: none;
+        text-transform: uppercase;
+        height: 14px;
+        left: 0%;
+        right: 67.84%;
+        top: calc(50% - 14px/2);  
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 2px; 
+        color: #333136;
+    }
+
+    &__link:active {
+        text-decoration: underline;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    .nav {
+        margin-left: 117px;
+    }
+}
+
+@media only screen and (max-width:375px) {
+    .nav {
+        display: none;
+    }
+}
